@@ -16,9 +16,13 @@ To execute a CAT source file (.cat):
 
   .\catc.exe examples/hello.cat
   .\catc.exe examples/calculator.cat
+  .\catc.exe examples/comments_demo.cat
 
 3. SYNTAX GUIDE
 -------------------------------------------------------------------
+- Comments:
+    // This is a single line comment
+
 - Variables & Assignment:
     let x = 10;
     let name = "CAT";
