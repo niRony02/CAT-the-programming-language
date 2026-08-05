@@ -1,0 +1,7 @@
+// loop.cat - Demonstrates while loop iteration
+let count = 1;
+
+while (count <= 5) {
+    print(count);
+    count = count + 1;
+}

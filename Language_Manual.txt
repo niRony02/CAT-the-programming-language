@@ -1,0 +1,52 @@
+===================================================================
+                       CAT LANGUAGE MANUAL
+===================================================================
+
+1. COMPILATION INSTRUCTIONS
+-------------------------------------------------------------------
+To build the CAT compiler executable on Windows using Flex, Bison, and GCC:
+
+  bison -d parser.y
+  flex lexer.l
+  gcc -Wall -std=c99 -o catc.exe parser.tab.c lex.yy.c symbol_table.c main.c
+
+2. RUNNING PROGRAMS
+-------------------------------------------------------------------
+To execute a CAT source file (.cat):
+
+  .\catc.exe examples/hello.cat
+  .\catc.exe examples/calculator.cat
+
+3. SYNTAX GUIDE
+-------------------------------------------------------------------
+- Variables & Assignment:
+    let x = 10;
+    let name = "CAT";
+
+- Arithmetic Operators:
+    let sum = a + b;
+    let diff = a - b;
+    let prod = a * b;
+    let quot = a / b;
+
+- Relational Operators:
+    > , < , == , != , >= , <=
+
+- Control Flow (If / Else):
+    if (x > 5) {
+        print("x is big");
+    } else {
+        print("x is small");
+    }
+
+- Loops (While):
+    let i = 1;
+    while (i <= 5) {
+        print(i);
+        i = i + 1;
+    }
+
+- Input & Output:
+    print("Hello World!");
+    let val = input();
+===================================================================

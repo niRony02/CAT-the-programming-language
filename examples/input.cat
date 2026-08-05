@@ -1,0 +1,10 @@
+// input.cat - Demonstrates user input
+print("Enter a number:");
+let n = input();
+
+print("You entered:");
+print(n);
+
+let double_val = n * 2;
+print("Double of your number:");
+print(double_val);
