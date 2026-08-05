@@ -34,7 +34,8 @@ static char *duplicate_substring(const char *s, size_t n) {
 %option noinput
 
 %%
-
+"//"    { /* Ignore single-line comments */ }
+\/\/.*  { /* Ignore line comments */ }
 [ \t\r\n]+          { /* Ignore whitespace */ }
 "//".*              { /* Ignore single-line comments */ }
 "/*"([^*]|\*+[^*/])*\*+"/" { /* Ignore multi-line comments */ }
